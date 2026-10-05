@@ -11,7 +11,7 @@ performance by giving the model the correct target architecture, bounded
 security tools, durable artifacts, and a disciplined path from target triage
 to hidden fixed-image verification.
 
-![Cyber-Frost 3.8 held-out vulnerability evaluation](assets/heldout4-social-card.png)
+![Cyber-Frost Harness hard-12 evaluation](assets/cyber-frost-harness-hard12.png)
 
 ## Why it exists
 
