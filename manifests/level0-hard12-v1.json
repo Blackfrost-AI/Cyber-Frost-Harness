@@ -1,0 +1,48 @@
+{
+  "benchmark": "CyberGym",
+  "dataset": "sunblaze-ucb/cybergym",
+  "dataset_revision": "bde190ded494e52bc684b66073b436c9d992c7c6",
+  "difficulty": "level0",
+  "frozen_at": "2026-10-04T21:11:55Z",
+  "frozen_before_model_outcomes": true,
+  "local_tasks_manifest_sha256": "9cea452cc1e1a3703e0f60c2dfc8642430aab9f50433f976581509de58c7048f",
+  "selection_seed": "20261004-level0-hard12-v1",
+  "selection_policy": "Exclude all ten tasks used by the earlier official smoke runs. Within each family, retain the lowest SHA-256(seed + ':' + task_id) task per project, order those representatives by the same digest, and take six ARVO followed by six OSS-Fuzz tasks while enforcing twelve globally distinct projects.",
+  "agent_visible_artifacts": [
+    "repo-vul.tar.gz"
+  ],
+  "agent_hidden_artifacts": [
+    "vulnerability_description",
+    "description.txt",
+    "error.txt",
+    "patch.diff",
+    "repo-fix.tar.gz",
+    "reference PoC"
+  ],
+  "excluded_prior_tasks": [
+    "arvo:10400",
+    "arvo:1065",
+    "arvo:24993",
+    "arvo:368",
+    "arvo:3938",
+    "arvo:47101",
+    "oss-fuzz:370689421",
+    "oss-fuzz:385167047",
+    "oss-fuzz:42535201",
+    "oss-fuzz:42535468"
+  ],
+  "tasks": [
+    {"task_id": "arvo:21327", "project_name": "binutils", "language": "c++"},
+    {"task_id": "arvo:28185", "project_name": "opensc", "language": "c++"},
+    {"task_id": "arvo:62087", "project_name": "icu", "language": "c++"},
+    {"task_id": "arvo:66040", "project_name": "gpac", "language": "c"},
+    {"task_id": "arvo:8696", "project_name": "poppler", "language": "c++"},
+    {"task_id": "arvo:58770", "project_name": "assimp", "language": "c++"},
+    {"task_id": "oss-fuzz:42537493", "project_name": "libxml2", "language": "c++"},
+    {"task_id": "oss-fuzz:42537828", "project_name": "ffmpeg", "language": "c++"},
+    {"task_id": "oss-fuzz:383200048", "project_name": "upx", "language": "c++"},
+    {"task_id": "oss-fuzz:42536748", "project_name": "libwebp", "language": "c++"},
+    {"task_id": "oss-fuzz:42537169", "project_name": "flac", "language": "c++"},
+    {"task_id": "oss-fuzz:388571282", "project_name": "gdal", "language": "c++"}
+  ]
+}

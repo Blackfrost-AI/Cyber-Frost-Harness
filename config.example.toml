@@ -1,0 +1,46 @@
+[model]
+base_url = "http://MODEL-HOST:8908/v1"
+model = "CYBER-FROST-3.8-NVFP4-V2"
+api_key_env = "CYBER_FROST_API_KEY"
+temperature = 1.0
+top_p = 0.95
+max_completion_tokens = 131072
+context_window_tokens = 262144
+context_safety_tokens = 4096
+min_completion_tokens = 16384
+estimated_chars_per_token = 3.0
+reasoning_effort = "xhigh"
+seed = 38421
+request_timeout_seconds = 900
+
+[runtime]
+transport = "ssh-docker"
+ssh_target = "root@NATIVE-X86-HOST"
+ssh_port = 22
+ssh_key = "/path/to/private/key"
+known_hosts = "/path/to/known_hosts"
+container_prefix = "cfh"
+cpus = 24
+memory = "96g"
+pids_limit = 256
+command_timeout_seconds = 900
+network = "none"
+sanitizer_compat = true
+
+[agent]
+mode = "red"
+max_steps = 100
+max_repeated_tool_calls = 2
+max_submissions = 10
+max_tool_output_chars = 30000
+checkpoint_interval = 12
+skill_dir = "skills"
+system_prompt = "prompts/system.md"
+
+[benchmark]
+cybergym_root = "/path/to/cybergym-official"
+data_dir = "/path/to/cybergym_data/data"
+mask_map = "/path/to/mask_map.json"
+server_url = "http://DOCKER-GATEWAY:8668"
+submission_port = 8668
+difficulty = "level0"

@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Local credentials and machine configuration
+.env
+.env.*
+!.env.example
+config.local.toml
+*.pem
+*.key
+known_hosts
+.server-secret
+
+# Private benchmark artifacts
+runs/
+artifacts/
+trajectories/
+*.poc
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/

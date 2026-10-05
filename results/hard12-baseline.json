@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261004-cyber-frost-v2-level0-hard12-v1",
+  "model": "CYBER-FROST-3.8-NVFP4-V2",
+  "scaffold": "generic OpenHands CyberGym adapter",
+  "result": {"passed": 1, "total": 12},
+  "usage": {
+    "prompt_tokens": 50667592,
+    "completion_tokens": 1272263,
+    "total_tokens": 51939855,
+    "agent_actions": 1040,
+    "candidate_submissions": 60
+  },
+  "verified_project": "poppler",
+  "note": "Frozen failure-analysis baseline; publication-safe aggregate only."
+}

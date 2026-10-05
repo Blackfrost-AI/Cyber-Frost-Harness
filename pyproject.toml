@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyber-frost-harness"
+version = "0.2.0"
+description = "Native dynamic-analysis and skill harness for CYBER-FROST security evaluation"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+cfh = "cyber_frost_harness.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
